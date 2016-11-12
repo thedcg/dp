@@ -16,6 +16,6 @@ RUN apt-get -y upgrade
 
 # パッケージ
 RUN apt-get -y install make git curl openssh-client
-RUN apt-get -y install xz-utils zip unzip
+RUN apt-get -y install xz-utils zip unzip dos2unix
 
 # 終了
