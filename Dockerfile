@@ -1,5 +1,5 @@
 ################################
-# Dockerfile: thedcg/tl:latest
+# Dockerfile: thedcg/dp:latest
 
 # ベース
 FROM ubuntu:latest
@@ -16,6 +16,7 @@ RUN apt-get -y upgrade
 
 # パッケージ
 RUN apt-get -y install make git curl openssh-client
+RUN apt-get -y install perl libipc-run-safehandles-perl
 RUN apt-get -y install xz-utils zip unzip dos2unix
 
 # 終了
