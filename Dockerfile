@@ -25,6 +25,8 @@ RUN apt-get -y install \
          libipc-run-perl \
          libipc-run-safehandles-perl \
          libjson-perl \
+         liburi-encode-perl \
+         liburi-perl \
        xz-utils \
        zip unzip \
        dos2unix
