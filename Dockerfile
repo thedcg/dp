@@ -16,19 +16,20 @@ RUN apt-get -y upgrade
 
 # パッケージ
 RUN apt-get -y install \
-       make \
-       git \
-       curl \
-       openssh-client \
-       perl \
-         libencode-perl \
-         libipc-run-perl \
-         libipc-run-safehandles-perl \
-         libjson-perl \
-         liburi-encode-perl \
-         liburi-perl \
-       xz-utils \
-       zip unzip \
-       dos2unix
+	make \
+	git \
+	curl \
+	openssh-client \
+	perl \
+	  libencode-perl \
+	  libipc-run-perl \
+	  libipc-run-safehandles-perl \
+	  libjson-perl \
+	  liburi-encode-perl \
+	  liburi-perl \
+	xz-utils \
+	zip \
+	unzip \
+	dos2unix \
 
 # 終了
