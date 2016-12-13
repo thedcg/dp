@@ -11,11 +11,10 @@ FROM ubuntu:latest
 MAINTAINER Lemures Lemniscati <lemures.lemniscati@gmail.com>
 
 # アップデート
-RUN apt-get update
-RUN apt-get -y upgrade
-
-# パッケージ
-RUN apt-get -y install \
+RUN date --iso-8601=ns\
+ && apt-get update\
+ && apt-get -y upgrade\
+ && apt-get -y install\
 	make \
 	git \
 	curl \
@@ -31,5 +30,8 @@ RUN apt-get -y install \
 	zip \
 	unzip \
 	dos2unix \
+ && apt-get clean \
+ && rm -rf /var/lib/apt/lists/*\
+ && date --iso-8601=ns
 
 # 終了
