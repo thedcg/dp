@@ -1,19 +1,19 @@
 ################################
-# Dockerfile: thedcg/dp:latest
+# Dockerfile: nubes/dp:latest
 
-# ベース
+# Base
 FROM ubuntu:latest
 
 ################################
 # Dockerfile.common
 
-# 管理者
-MAINTAINER Lemures Lemniscati <lemures.lemniscati@gmail.com>
+# Maintainer
+LABEL org.opencontainers.image.authors="Gravitates Gaudiales <gaudiales@gmail.com>"
 
 # Timezone
 ENV TZ=Asia/Tokyo
 
-# アップデート
+# Update
 RUN date --iso-8601=ns\
  && apt-get update\
  && apt-get -y upgrade\
